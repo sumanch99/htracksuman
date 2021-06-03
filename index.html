@@ -20,7 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
           $(document).ready(function(){
-            $("#heart1, #heart2, #heart3, #heart4").click(function(){
+            $("#heart1, #heart2, #heart3, #heart4,#heart5").click(function(){
 
               if($(this).attr("class")=="bi bi-heart") {
                   $(this).attr("class","bi bi-heart-fill icon-red");
@@ -32,75 +32,9 @@
 
             $("#cartoption1,#cartoption2,#cartoption3,#cartoption4,#cartoption5").click(function(){
               var s = $(this).text();
-              $(this).toggleClass("bg-warning");
+              $(this).toggleClass("bg-info");
               if ($(this).text() == "Add to Cart")
-                 $(this).text("Added To Cart")
-              else
-                 $(this).html("<i class='bi bi-cart4'></i>Add to Cart");
-            });
-
-          });
-
-          $(document).ready(function(){
-            $("#heart-1").click(function(){
-
-              if($(this).attr("class")=="bi bi-heart") {
-                  $(this).attr("class","bi bi-heart-fill icon-red");
-              }
-              else
-                 $(this).attr("class","bi bi-heart");
-              
-            });
-
-            $("#cart-option-1").click(function(){
-              var s = $(this).text();
-              $(this).toggleClass("bg-warning");
-              if ($(this).text() == "Add to Cart")
-                 $(this).text("Added To Cart")
-              else
-                 $(this).html("<i class='bi bi-cart4'></i>Add to Cart");
-            });
-
-          });
-
-          $(document).ready(function(){
-            $("#heart-1").click(function(){
-
-              if($(this).attr("class")=="bi bi-heart") {
-                  $(this).attr("class","bi bi-heart-fill icon-red");
-              }
-              else
-                 $(this).attr("class","bi bi-heart");
-              
-            });
-
-            $("#cart-option-1").click(function(){
-              var s = $(this).text();
-              $(this).toggleClass("bg-warning");
-              if ($(this).text() == "Add to Cart")
-                 $(this).text("Added To Cart")
-              else
-                 $(this).html("<i class='bi bi-cart4'></i>Add to Cart");
-            });
-
-          });
-
-          $(document).ready(function(){
-            $("#heart-1,#heart-2,#heart-3,#heart-4,#heart-5").click(function(){
-
-              if($(this).attr("class")=="bi bi-heart") {
-                  $(this).attr("class","bi bi-heart-fill icon-red");
-              }
-              else
-                 $(this).attr("class","bi bi-heart");
-              
-            });
-
-            $("#cart-option-1").click(function(){
-              var s = $(this).text();
-              $(this).toggleClass("bg-warning");
-              if ($(this).text() == "Add to Cart")
-                 $(this).text("Added To Cart")
+                 $(this).html("<i class='bi bi-cart-fill'></i>Added to Cart");
               else
                  $(this).html("<i class='bi bi-cart4'></i>Add to Cart");
             });
@@ -127,7 +61,7 @@
                     <p>Rs. 200.00 <strike><small>Rs. 250</strike> 20%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div class="row">
-                      <div class="col-8"><a href="#" id="cartoption1" class="btn btn-primary bg-success
+                      <div class="col-8"><a style="cursor:pointer" id="cartoption1" class="btn btn-primary bg-success text-white
                         "><i class="bi bi-cart4"></i>Add to Cart</a></div>
                       <div class="col-4 p-1"><i id="heart1" style="cursor:pointer" class="bi bi-heart"></i></div>
                     </div>
@@ -141,10 +75,10 @@
                     <h5 class="card-title">Iphone 12 Pro (Apple) <small><span class="badge bg-warning text-center text-white">3.8
                       <i class="bi bi-star-fill"></i>
                     </span></small></h5>
-                    <p>Rs. 90000.00 <strike><small>Rs. 109000</strike> 20%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
+                    <p>Rs. 90000.00 <strike><small>Rs. 109000</strike> 10%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div class="row">
-                      <div class="col-8"><a href="#" id="cartoption2" class="btn btn-primary bg-success
+                      <div class="col-8"><a style="cursor:pointer" id="cartoption2" class="btn btn-primary bg-success text-white
                         "><i class="bi bi-cart4"></i>Add to Cart</a></div>
                       <div class="col-4 p-1"><i id="heart2" style="cursor:pointer" class="bi bi-heart"></i></div>
                     </div>
@@ -158,10 +92,10 @@
                     <h5 class="card-title">Camera (Sony) <small><span class="badge bg-warning text-center text-white">3.9
                       <i class="bi bi-star-fill"></i>
                     </span></small></h5>
-                    <p>Rs. 36000.00 <strike><small>Rs. 44000</strike> 20%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
+                    <p>Rs. 36000.00 <strike><small>Rs. 44000</strike> 22%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div class="row">
-                      <div class="col-8"><a href="#" id="cartoption3" class="btn btn-primary bg-success
+                      <div class="col-8"><a style="cursor:pointer" id="cartoption3" class="btn btn-primary bg-success text-white
                         "><i class="bi bi-cart4"></i>Add to Cart</a></div>
                       <div class="col-4 p-1"><i id="heart3" style="cursor:pointer" class="bi bi-heart"></i></div>
                     </div>
@@ -175,10 +109,10 @@
                     <h5 class="card-title">Laptop (Lenovo) <small><span class="badge bg-danger text-center text-white">2.4
                       <i class="bi bi-star-fill"></i>
                     </span></small></h5>
-                    <p>Rs. 49990.00 <strike><small>Rs. 55000</strike> 20%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
+                    <p>Rs. 49990.00 <strike><small>Rs. 55000</strike> 25%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div class="row">
-                      <div class="col-8"><a href="#" id="cartoption4" class="btn btn-primary bg-success
+                      <div class="col-8"><a style="cursor:pointer" id="cartoption4" class="btn btn-primary bg-success text-white
                         "><i class="bi bi-cart4"></i>Add to Cart</a></div>
                       <div class="col-4 p-1"><i id="heart4" style="cursor:pointer" class="bi bi-heart"></i></div>
                     </div>
@@ -194,10 +128,10 @@
                     <h5 class="card-title">Sony Smart Tv (50 inch) <small><span class="badge bg-success text-center text-white">4.8
                       <i class="bi bi-star-fill"></i>
                     </span></small></h5>
-                    <p>Rs. 99999.00 <strike><small>Rs. 119000/-</strike> 20%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
+                    <p>Rs. 99999.00 <strike><small>Rs. 119000/-</strike> 15%</small> <i class="bi bi-patch-exclamation-fill icon-red"></i></p>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div class="row">
-                      <div class="col-8"><a href="#" id="cartoption5" class="btn btn-primary bg-success
+                      <div class="col-8"><a style="cursor:pointer" id="cartoption5" class="btn btn-primary bg-success text-white
                         "><i class="bi bi-cart4"></i>Add to Cart</a></div>
                       <div class="col-4 p-1"><i id="heart5" style="cursor:pointer" class="bi bi-heart"></i></div>
                     </div>
